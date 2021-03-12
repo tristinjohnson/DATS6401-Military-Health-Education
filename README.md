@@ -4,4 +4,4 @@ My name is Tristin Johnson, and this website includes a full analysis of 11 diff
 
 Throughout this website, you have the ability to overlook information regarding the government spending of 3 major categories, including military, healthcare, and education government expenditure. Feel free to navigate through the tabs above to explore. This website displays an in-depth analysis and visualization of the categories mentioned above, including aspects such as GDP and per capita figures.
 
-GitHub.io: https://tristinjohnson.github.io/DATS6401-Military-Healthcare-Education/
+GitHub.io: https://tristinjohnson.github.io/DATS6401-Military-Health-Education/
