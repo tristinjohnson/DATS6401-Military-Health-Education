@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--Head-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DATS 6401 - Individual Project</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Archivo+Narrow:400,700" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<!--Body-->
+<body>
+<div id="logo" class="container">
+	<h1><a href="index.html">Military, Healthcare & Education</a></h1>
+</div>
+
+<!--Menu Tabs-->
+<div id="menu-wrapper">
+	<div id="menu" class="container">
+		<ul>
+			<li><a href="index.html">Homepage</a></li>
+			<li><a href="military.html">Military</a></li>
+			<li><a href="healthcare.html">Healthcare</a></li>
+			<li><a href="education.html">Education</a></li>
+			<li class="current_page_item"><a href="gdp.html">GDP</a></li>
+			<li><a href="fastestGrowth.html">Fastest Growth</a></li>
+		</ul>
+	</div>
+</div>
+
+<!--Page-->
+<div id="page" class="container">
+	<script src="js/gdp.js"></script>
+	<h3>Analysis of Country's GDP</h3>
+	<img src="images/gdp1.jpg" width="1000" height="400" class="center">
+	<div id="intro-box">
+		<br>
+		<p>The following graphs refer to various aspects regarding the country's GDP, such as comparing the per person values of military, helath, and education to the GDP along with the overall spending versus the GDP from 2013 to 2018. You can hover over any of the specific bars to see the exact value throughout this entire page. </p>
+		<p>*** The education figures for the following countries were estimated as there is no accurate source to display these countries' government education spending: China, Japan, France, Saudi Arabia and India ***</p>
+	</div>
+
+	<br><br><hr><br><br>
+
+	<!--Military, Education, Healthcare vs. GDP in dropwdown-->
+	<h4>Military, Education, Healthcare Vs. GDP</h4>
+	<div id="subgraph_text">
+		<p>The following graph displays all of military, education and healthcare average spending versus average GDP by country from 2013 to 2018. Select the country you would like to view and the graph will automatically display all of that country's information.</p>
+	</div>
+
+	<form id="form2" onchange="overallSpendingVsGDP()">
+		<select id="dropdown1">
+			<option value="Australia">Australia</option>
+			<option value="United States">United States</option>
+			<option value="China">China</option>
+			<option value="Germany">Germany</option>
+			<option value="Japan">Japan</option>
+			<option value="France">France</option>
+			<option value="United Kingdom">United Kingdom</option>
+			<option value="Saudi Arabia">Saudi Arabia</option>
+			<option value="Russia">Russia</option>
+			<option value="India">India</option>
+			<option value="Brazil">Brazil</option>
+		</select>
+	</form>
+
+	<div id="gdp_vs_other_by_country"></div>
+	
+	<br><br><hr><br><br>
+
+	<!--Military vs. GDP Per Capita-->
+	<h4>Military Per Capita Vs. GDP Per Capita</h4>
+	<div id="subgraph_text">
+		<p>The following graphs display the military spending per capita versus the GDP spending per capita. Each graph shows an specific year, starting at 2013 until 2018.</p>
+	</div>
+
+	<div id="mil_percap_gdp_percap_2013"></div>
+	<div id="mil_percap_gdp_percap_2014"></div> 
+	<div id="mil_percap_gdp_percap_2015"></div>
+	<div id="mil_percap_gdp_percap_2016"></div>
+	<div id="mil_percap_gdp_percap_2017"></div>
+	<div id="mil_percap_gdp_percap_2018"></div>
+
+	<br><br><hr><br><br>
+
+	<!--Healthcare & Education vs. GDP Per Capita in Table-->
+	<h4>Healthcare & Education Per Capita Vs. GDP Per Capita</h4>
+	<div id="subgraph_text">
+		<p>On the left side, the graphs display the healthcare spending per capita versus the GDP per capita by year. The right side displays the education per capita versus GDP per capita by year. You can analyze both healthcare and education versus GDP by year as they are displayed right next to each other.</p>
+	</div>
+
+	<table>
+		<tr>
+			<td><div id="healthPerCap_gdpPerCap_2013" style="border: 1px solid #ccc"></div></td>
+			<td><div id="educationPerCap_gdpPerCap_2013" style="border: 1px solid #ccc"></div></td>
+		</tr>
+		<tr>
+			<td><div id="healthPerCap_gdpPerCap_2014" style="border: 1px solid #ccc"></div></td>
+			<td><div id="educationPerCap_gdpPerCap_2014" style="border: 1px solid #ccc"></div></td>
+		</tr>
+		<tr>
+			<td><div id="healthPerCap_gdpPerCap_2015" style="border: 1px solid #ccc"></div></td>
+			<td><div id="educationPerCap_gdpPerCap_2015" style="border: 1px solid #ccc"></div></td>
+		</tr>
+		<tr>
+			<td><div id="healthPerCap_gdpPerCap_2016" style="border: 1px solid #ccc"></div></td>
+			<td><div id="educationPerCap_gdpPerCap_2016" style="border: 1px solid #ccc"></div></td>
+		</tr>
+		<tr>
+			<td><div id="healthPerCap_gdpPerCap_2017" style="border: 1px solid #ccc"></div></td>
+			<td><div id="educationPerCap_gdpPerCap_2017" style="border: 1px solid #ccc"></div></td>
+		</tr>
+		<tr>
+			<td><div id="healthPerCap_gdpPerCap_2018" style="border: 1px solid #ccc"></div></td>
+			<td><div id="educationPerCap_gdpPerCap_2018" style="border: 1px solid #ccc"></div></td>
+		</tr>
+	</table>
+	
+</div>
+
+<!--Footer-->
+<div id="footer" class="container">
+	<p>&copy; <script>var d = new Date(); document.write(d.getFullYear());</script> | All rights reserved | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a> | Tristin Johnson </p>
+</div>
+</body>
+</html>

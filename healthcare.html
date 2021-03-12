@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--Head-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DATS 6401 - Individual Project</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Archivo+Narrow:400,700" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<!--Body-->
+<body>
+<div id="logo" class="container">
+	<h1><a href="index.html">Military, Healthcare & Education</a></h1>
+</div>
+
+<!--Menu Tabs-->
+<div id="menu-wrapper">
+	<div id="menu" class="container">
+		<ul>
+			<li><a href="index.html">Homepage</a></li>
+			<li><a href="military.html">Military</a></li>
+			<li class="current_page_item"><a href="healthcare.html">Healthcare</a></li>
+			<li><a href="education.html">Education</a></li>
+			<li><a href="gdp.html">GDP</a></li>
+			<li><a href="fastestGrowth.html">Fastest Growth</a></li>
+		</ul>
+	</div>
+</div>
+
+<!--Page-->
+<div id="page" class="container">
+	<script src="js/healthcare.js"></script>
+	<h3>Government Expenditure on Healthcare</h3>
+	<img src="images/healthcare.jpg" width="1000" height="400" class="center">
+	<div id="intro-box">
+		<br>
+		<p>The following graphs refer to the amount of money each country spends on their healhcare from 2013 to 2018. You can hover over any of the specific bars to see the exact value throughout this entire page. </p>
+	</div>
+
+	<br><br><hr><br><br>
+
+	<!--HealthCare Spending by Country-->
+	<h4>Healthcare Spending by Country</h4>
+	<div id="subgraph_text">
+		<p>This graph displays the countries that spend the most money on their healthcare, sorted by the country who spends the greatest to the country that spends the least.</p>
+	</div>
+
+	<div id="healthcare_spending"></div>
+	<br><br><hr><br><br>
+
+	<!--Healthcare vs. Military Spending-->
+	<h4>Healthcare Spending Vs. Military Spending from 2013 to 2018</h4>
+	<div id="subgraph_text">
+		<p>The following graphs are separated by year, and compare the government's spending of healthcare versus the military spending.</p>
+	</div>
+
+	<!--Table for Healcare vs Military-->
+	<table>
+		<tr>
+			<td><div id="health_vs_mil_2013" style="border: 1px solid #ccc"></div></td>
+			<td><div id="health_vs_mil_2014" style="border: 1px solid #ccc"></div></td>
+		</tr>
+		<tr>
+			<td><div id="health_vs_mil_2015" style="border: 1px solid #ccc"></div></td>
+			<td><div id="health_vs_mil_2016" style="border: 1px solid #ccc"></div></td>
+		</tr>
+		<tr>
+			<td><div id="health_vs_mil_2017" style="border: 1px solid #ccc"></div></td>
+			<td><div id="health_vs_mil_2018" style="border: 1px solid #ccc"></div></td>
+		</tr>
+	</table>
+	
+</div>
+
+<!--Footer-->
+<div id="footer" class="container">
+	<p>&copy; <script>var d = new Date(); document.write(d.getFullYear());</script> | All rights reserved | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a> | Tristin Johnson </p>
+</div>
+</body>
+</html>

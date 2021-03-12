@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--Head-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DATS 6401 - Individual Project</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Archivo+Narrow:400,700" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<!--Body-->
+<body>
+<div id="logo" class="container">
+	<h1><a href="index.html">Military, Healthcare & Education</a></h1>
+</div>
+
+<!--Menu Tabs-->
+<div id="menu-wrapper">
+	<div id="menu" class="container">
+		<ul>
+			<li><a href="index.html">Homepage</a></li>
+			<li class="current_page_item"><a href="military.html">Military</a></li>
+			<li><a href="healthcare.html">Healthcare</a></li>
+			<li><a href="education.html">Education</a></li>
+			<li><a href="gdp.html">GDP</a></li>
+			<li><a href="fastestGrowth.html">Fastest Growth</a></li>
+		</ul>
+	</div>
+</div>
+
+<!--Page-->
+<div id="page" class="container">
+	<script src="js/military.js"></script>
+	<h3>Government Expenditure on Military</h3>
+	<img src="images/military_background.jpg" width="1000" height="400" class="center">
+	<div id="intro-box">
+		<br>
+		<p>The following graphs refer to the amount of money each country spends on the military from 2013 to 2018. You can hover over any of the specific bars to see the exact value throughout this entire page. </p>
+	</div>
+
+	<br><br><hr><br><br>
+
+	<!--Military Spending by Country-->
+	<h4>Military Spending by Country</h4>
+	<div id="subgraph_text">
+		<p>This graph displays the countries that spend the most money on their military, sorted by the country who spends the greatest to the country that spends the least.</p>
+	</div>
+
+	<div id="military_spending"></div>
+	<br>
+
+	<br><br><hr><br><br>
+
+	<!--Military Spending Per Capita-->
+	<h4>Military Spending Per Capita by Year</h4>
+	<div id="subgraph_text">
+		<p>The following graph displays the amount of money the government spends per capita on any given year. Select the year you would like to view and the graph will show.</p>
+	</div>
+
+	<!--Dropdown Form for Military Spending Per Capita-->
+	<form id="form1" onchange="militarySpendingPerCapita()">
+		<select id="dropdown">
+			<option value="2013">2013</option>
+			<option value="2014">2014</option>
+			<option value="2015">2015</option>
+			<option value="2016">2016</option>
+			<option value="2017">2017</option>
+			<option value="2018">2018</option>
+		</select>
+	</form>
+
+	<div id="mil_per_cap_drop"></div>
+	
+</div>
+
+<!--Footer-->
+<div id="footer" class="container">
+	<p>&copy; <script>var d = new Date(); document.write(d.getFullYear());</script> | All rights reserved | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a> | Tristin Johnson </p>
+</div>
+</body>
+</html>
